@@ -7,7 +7,7 @@ public class Riley
 	    int tristeza = 0;
 	    int amizades = 0;
 	    int exer = 0;
-	    int exern = exer - 10;
+	    int exern = 0;
 	    float a1 = 0.0f;
 	    float a2 = 0.0f;
 	    float a3 = 0.0f;
@@ -49,8 +49,15 @@ public class Riley
 	    System.out.println("Quantos exercicios feitos: ");
 	    exer = scanner.nextInt();
 	    
+	    
+	    if (exer < 10) {
+	        exern = exern = 10 - exer;
+	    } else {
+	        exern = 0;
+	    }
+	    
 	    alegria = alegria + exer * 10;
-	    tristeza = alegria + exern * 10;
+	    tristeza = tristeza + exern * 10;
 	    
 	    System.out.println(alegria);
 	    System.out.println(tristeza);
