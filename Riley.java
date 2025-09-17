@@ -61,5 +61,7 @@ public class Riley
 	    
 	    System.out.println(alegria);
 	    System.out.println(tristeza);
+	    
+	    scanner.close();
 	}
 }
